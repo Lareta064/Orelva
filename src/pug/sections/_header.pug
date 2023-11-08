@@ -39,7 +39,7 @@ header.header
 			.header-nav__content.flex-btw
 				a.logo(href='index.html')
 					img(src='./img/logo/logo.webp' alt='logo')
-				.nav-menu
+				.nav-menu#header-menu
 					ul
 						li
 							a(href='#') Galvena
@@ -49,6 +49,23 @@ header.header
 							a(href='galerija.html') Galerija
 						li
 							a(href='kontakti.html') Kontakti
+						
+					//====== visible mobile ========
+					.nav-menu__group
+						.social-block
+							a.social-item(href='#')
+								svg.svg-fb
+									use(href='./img/svg-sprite.svg#svg-fb')
+							a.social-item(href='#')
+								svg.svg-inst
+									use(href='./img/svg-sprite.svg#svg-inst')
+						
+						a.media-icon.mail-link(href='mailto:olivia@gmail.com')
+							i.icon-email
+							span olivia@gmail.com
+						p.media-icon.time-link
+							i.icon-clock
+							span Пн-Сб: 8-19				
 				
 				//======== visible mobile ==========
 				.header-nav-group.d-flex

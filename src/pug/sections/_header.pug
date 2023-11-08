@@ -1,0 +1,70 @@
+header.header
+	//=========== header-top ==========
+	.header-top
+		.container
+			.header-top__content.d-flex
+
+				// header-top left column
+				.header-top__col
+					a.media-icon.tel-link(href='tel:+37127147279')
+						i.icon-tel
+						span +371 27147279
+					a.media-icon.mail-link(href='mailto:olivia@gmail.com')
+						i.icon-email
+						span olivia@gmail.com
+					p.media-icon.time-link
+						i.icon-clock
+						span Пн-Сб: 8-19
+				// header-top right column
+				.header-top__col
+					.social-block
+						a.social-item(href='#')
+							svg.svg-fb
+								use(href='./img/svg-sprite.svg#svg-fb')
+						a.social-item(href='#')
+							svg.svg-inst
+								use(href='./img/svg-sprite.svg#svg-inst')
+					.lang-group
+						a.lang-group-item.active(href='#!')
+							img(src='./img/lv.svg' alt='lv')
+						a.lang-group-item(href='#!')
+							img(src='./img/ru.svg' alt='ru')
+						a.lang-group-item(href='#!')
+							img(src='./img/en.svg' alt='en')
+
+	
+	//=========== header nav ==========
+	.header-nav
+		.container
+			.header-nav__content.flex-btw
+				a.logo(href='index.html')
+					img(src='./img/logo/logo.webp' alt='logo')
+				.nav-menu
+					ul
+						li
+							a(href='#') Galvena
+						li
+							a(href='#') Pakalpojumi
+						li
+							a(href='galerija.html') Galerija
+						li
+							a(href='kontakti.html') Kontakti
+				
+				//======== visible mobile ==========
+				.header-nav-group.d-flex
+					
+					a.media-icon.tel-link(href='tel:+37127147279')
+						i.icon-tel
+						span +371 27147279
+					
+					.lang-group
+						a.lang-group-item.active(href='#!')
+							img(src='./img/lv.svg' alt='lv')
+						a.lang-group-item(href='#!')
+							img(src='./img/ru.svg' alt='ru')
+						a.lang-group-item(href='#!')
+							img(src='./img/en.svg' alt='en')
+					//====== menu-bar-icon ====
+					.menu-toggle#menu-toggle
+						span
+

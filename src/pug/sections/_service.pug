@@ -1,0 +1,28 @@
+mixin card(img)
+	.service-card
+		.service-card__img
+			img(src="./img/gallery/"+ img+".webp", alt="img")
+		.service-card__text
+			h3 Lorem ipsum 
+			p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+section.service.overlay-bg
+	.bg-img
+		.bg-img__item
+			img(src="./img/gallery/19.webp", alt="img")
+		.bg-img__item
+			img(src="./img/gallery/15.webp", alt="img")
+		.bg-img__item
+			img(src="./img/gallery/16.webp", alt="img")
+		.bg-img__item
+			img(src="./img/gallery/17.webp", alt="img")
+	.container
+		.service-title.txt-center
+			h2 Mūsu pakalpojumi.
+			a(href="#!").text-link Explore
+		.service-cards
+			+card(40)
+			+card(1)
+			+card(49)
+			+card(3)
+			+card(4)
+			+card(5)

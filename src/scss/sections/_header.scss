@@ -1,10 +1,14 @@
 /* ======== header =========*/
 .header {
 	background-image: url('../img/bg_1.webp');
+	background-attachment: fixed;
 	background-size: cover;
 	background-repeat: no-repeat;
 	position: relative;
 	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	&>*{width: 100%;}
 }
 
 .header:after {
@@ -14,10 +18,11 @@
 	left: 0;
 	bottom: 0;
 	right: 0;
-	background-color: rgba(27, 27, 27, .4);
+	background-color: rgba(27, 27, 27, .7);
 }
 
 .header-top {
+	flex-shrink: 0;
 	padding-top: 12px;
 	padding-bottom: 12px;
 	border-bottom: 1px solid rgba(204, 204, 204, .3);
@@ -158,6 +163,7 @@
 /******header-nav-row*******/
 
 .header-nav{
+	flex-shrink: 0;
 	position: relative;
 	z-index: 3;
 	padding-top: 12px;
@@ -183,12 +189,13 @@
 }
 .logo{
 	width: 160px;
+	display: block;
 	img{object-fit: contain;}
 	@media (max-width: 1199px) {
 	width: 120px;
 	}
 	@media (max-width: 767px) {
-	  width: 60px;
+	  width: 76px;
 	}
 }
 .nav-menu{
@@ -332,4 +339,39 @@
 	-ms-transform: rotate(-45deg);
 	transform: rotate(-45deg);
 
+}
+/******.header-banner******/
+.header-banner{
+	flex-grow: 1;
+	position: relative;
+	z-index: 1;
+	display: flex;
+	padding-bottom: 80px;
+
+	.container{
+		display: flex;
+		align-items: center;
+	}
+	h1{font-size: 2.9em;}
+	h2{
+	font-size: 1.5em;
+	color: #ccc;
+	margin-top: 40px;
+	}
+	.header-banner__title a{
+		
+		margin-top: 20px;
+		
+	}
+	@media (max-width: 767px) {
+		padding-bottom: 54px;
+	h1 {
+			font-size: 1.7em;
+		}
+	h2{
+		font-size: 1.3em;
+		margin-top: 16px;
+	}
+		.header-banner__title a{font-size: 16px; margin-top: 12px;}
+	}
 }
